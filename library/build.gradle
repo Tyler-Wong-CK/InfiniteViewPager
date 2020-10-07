@@ -4,10 +4,10 @@ apply plugin: 'android-maven'
 group 'com.antonyt.infiniteviewpager'
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 30
 
     defaultConfig {
-        targetSdkVersion 19
+        targetSdkVersion 30
         minSdkVersion 14
         versionName project.VERSION_NAME
         versionCode Integer.parseInt(project.VERSION_CODE)
@@ -20,6 +20,6 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-core-ui:27.1.1'
-    compile 'com.android.support:support-fragment:27.1.1'
+    implementation 'androidx.viewpager:viewpager:1.0.0'
+    implementation 'androidx.fragment:fragment:1.2.5'
 }
